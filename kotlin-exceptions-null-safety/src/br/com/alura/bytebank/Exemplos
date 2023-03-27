@@ -1,0 +1,42 @@
+Debug.
+
+Você pode usar o atalho Shift + F9.
+
+Any() - qualquer
+
+https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/any.html
+
+Os exemplos clássicos para o mesmo são any, non e all (qualquer,não e todos)
+funções que foram adicionadas à interface Iterable e à interface Map.
+
+when define uma expressão condicional com várias ramificações. É semelhante à
+switch instrução em linguagens semelhantes a C. Sua forma simples se parece com isso.
+when corresponde seu argumento a todas as ramificações sequencialmente
+até que alguma condição de ramificação seja satisfeita.
+
+Como acessar métodos e propriedades de variáveis anuláveis com o
+operador de chamada segura ?. e o operador de declaração não nula !!
+
+Na modificação, extraia o código de teste de expressões para um
+arquivo de função. Em seguida, teste o throw-exception lançando as seguintes exceções:
+
+ClassCastException;
+ArithmeticException;
+NumberFormatException.
+
+Todas as classes de exceção em Kotlin herdam a Throwableclasse.
+Cada exceção tem uma mensagem, um rastreamento de pilha e uma causa opcional.
+
+Para lançar um objeto de exceção, use a throwexpressão:
+
+lance  Exception ( "Olá!" )
+
+Para capturar uma exceção, use a expressão try... :catch
+
+try { //try é uma expressão, o que significa que pode ter um valor de retorno:
+    // some code
+} catch //pegar (e: SomeException) { // Conceitualmente, a ação do catch operador é semelhante a envolver o código dos fluxos upstream com .try { ... } catch (e: Throwable) { action(e) }
+    // handler
+} finally {
+    // optional finally block
+}
